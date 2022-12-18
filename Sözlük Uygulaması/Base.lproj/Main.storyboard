@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZRt-Xq-mqb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="So_zlu_k_Uygulaması" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7Qx-1u-JjW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZzS-eh-nuH">
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kelimehücre" id="MDq-zd-1s6" customClass="KelimeHu_creTableViewCell" customModule="So_zlu_k_Uygulaması" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MDq-zd-1s6" id="5lZ-Rp-6bh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İngilizce" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-ET-DPg">
+                                                    <rect key="frame" x="80" y="11.5" width="62" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkçe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-cc-Hzx">
+                                                    <rect key="frame" x="282" y="11.5" width="52" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tQs-cc-Hzx" firstAttribute="top" secondItem="5lZ-Rp-6bh" secondAttribute="topMargin" constant="0.5" id="BmO-ob-H2z"/>
+                                                <constraint firstItem="tHI-ET-DPg" firstAttribute="top" secondItem="5lZ-Rp-6bh" secondAttribute="topMargin" constant="0.5" id="Hwj-dE-HAS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tQs-cc-Hzx" secondAttribute="bottom" constant="0.5" id="OuA-uB-i4h"/>
+                                                <constraint firstItem="tHI-ET-DPg" firstAttribute="bottom" secondItem="5lZ-Rp-6bh" secondAttribute="bottomMargin" id="cd5-MO-yE6"/>
+                                                <constraint firstItem="tQs-cc-Hzx" firstAttribute="leading" secondItem="5lZ-Rp-6bh" secondAttribute="leadingMargin" constant="262" id="gjj-7v-gXr"/>
+                                                <constraint firstItem="tHI-ET-DPg" firstAttribute="leading" secondItem="5lZ-Rp-6bh" secondAttribute="leadingMargin" constant="60" id="jeu-cT-Rf8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ingilizceLabel" destination="tHI-ET-DPg" id="mVO-st-6Py"/>
+                                            <outlet property="türkceLabel" destination="tQs-cc-Hzx" id="O9x-5N-DXR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZzS-eh-nuH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0eD-ho-nk6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZzS-eh-nuH" secondAttribute="bottom" id="0q4-pJ-xkR"/>
+                            <constraint firstItem="7Qx-1u-JjW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4aP-lw-Ovk"/>
+                            <constraint firstItem="7Qx-1u-JjW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="D9Y-6s-B0j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZzS-eh-nuH" secondAttribute="trailing" id="Ec2-TX-RTh"/>
+                            <constraint firstItem="7Qx-1u-JjW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cWY-Gu-Mx2"/>
+                            <constraint firstItem="ZzS-eh-nuH" firstAttribute="top" secondItem="7Qx-1u-JjW" secondAttribute="bottom" id="u13-Mh-FnO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anasayfa" id="124-2d-6u5"/>
+                    <connections>
+                        <outlet property="kelimeTableView" destination="ZzS-eh-nuH" id="I0x-1O-9dP"/>
+                        <outlet property="searchBar" destination="7Qx-1u-JjW" id="6Ia-EU-voX"/>
+                        <segue destination="8Be-sT-PAT" kind="show" identifier="toDetay" id="zKY-rv-cpB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+        </scene>
+        <!--Kelime Detay-->
+        <scene sceneID="t8F-18-EIr">
+            <objects>
+                <viewController id="8Be-sT-PAT" customClass="KelimeDetayViewController" customModule="So_zlu_k_Uygulaması" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rVM-zR-sJP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkçe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2B-1y-cGR">
+                                <rect key="frame" x="30" y="278" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nV6-cs-3um"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İngilizce" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3Y-iW-BhI">
+                                <rect key="frame" x="30" y="188" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m1g-R6-thM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hf6-qi-jME"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hf6-qi-jME" firstAttribute="trailing" secondItem="G2B-1y-cGR" secondAttribute="trailing" constant="30" id="1MR-us-9Ij"/>
+                            <constraint firstItem="S3Y-iW-BhI" firstAttribute="leading" secondItem="Hf6-qi-jME" secondAttribute="leading" constant="30" id="5EU-Mf-fey"/>
+                            <constraint firstItem="S3Y-iW-BhI" firstAttribute="top" secondItem="Hf6-qi-jME" secondAttribute="top" constant="100" id="UcD-qJ-ezX"/>
+                            <constraint firstItem="G2B-1y-cGR" firstAttribute="leading" secondItem="Hf6-qi-jME" secondAttribute="leading" constant="30" id="mWZ-0j-gCq"/>
+                            <constraint firstItem="Hf6-qi-jME" firstAttribute="trailing" secondItem="S3Y-iW-BhI" secondAttribute="trailing" constant="30" id="tph-2O-MFE"/>
+                            <constraint firstItem="G2B-1y-cGR" firstAttribute="top" secondItem="S3Y-iW-BhI" secondAttribute="bottom" constant="50" id="ynm-Sb-31X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kelime Detay" id="k4t-dK-eXB"/>
+                    <connections>
+                        <outlet property="ingilizceLabel" destination="S3Y-iW-BhI" id="bHT-oi-gXf"/>
+                        <outlet property="türkceLabel" destination="G2B-1y-cGR" id="dRd-HF-umr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fM5-IB-cMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H9d-Wd-Yd7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZRt-Xq-mqb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r3M-0U-Zwd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jqa-M1-UWb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zx-5e-ysj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
